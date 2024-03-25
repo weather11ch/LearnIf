@@ -72,33 +72,42 @@ namespace LearnIf
             //Если пользователь ввел слово, для которого отсутствует перевод, то следует вывести
             //сообщение, что такого слова нет.
 
-            Console.WriteLine("Введите слово на русском языке о погоде");
-            string WORD = Console.ReadLine();
+            //Console.WriteLine("Введите слово на русском языке о погоде");
+            //string WORD = Console.ReadLine();
            
-            switch (WORD.ToLower().Trim())
-            {              
-                case "cолнце": Console.WriteLine("sun"); break;
-                case "cолнечно": Console.WriteLine("sunny"); break;
-                case "облачно": Console.WriteLine("cloudy"); break;
-                case "дождливо": Console.WriteLine("rainy"); break;
-                case "снежно": Console.WriteLine("snowy"); break;
-                case "ветрено": Console.WriteLine("windy"); break;
-                case "грозовая погода": Console.WriteLine("stormy"); break;
-                case "ясно": Console.WriteLine("clear"); break;
-                case "туманно": Console.WriteLine("foggy"); break;
-                case "холодно": Console.WriteLine("cold"); break;
-                case "тепло": Console.WriteLine("warm"); break;
-                case "жарко": Console.WriteLine("hot"); break;
+            //switch (WORD.ToLower().Trim())
+            //{              
+            //    case "cолнце": Console.WriteLine("sun"); break;
+            //    case "cолнечно": Console.WriteLine("sunny"); break;
+            //    case "облачно": Console.WriteLine("cloudy"); break;
+            //    case "дождливо": Console.WriteLine("rainy"); break;
+            //    case "снежно": Console.WriteLine("snowy"); break;
+            //    case "ветрено": Console.WriteLine("windy"); break;
+            //    case "грозовая погода": Console.WriteLine("stormy"); break;
+            //    case "ясно": Console.WriteLine("clear"); break;
+            //    case "туманно": Console.WriteLine("foggy"); break;
+            //    case "холодно": Console.WriteLine("cold"); break;
+            //    case "тепло": Console.WriteLine("warm"); break;
+            //    case "жарко": Console.WriteLine("hot"); break;
 
-                default:
-                    Console.WriteLine("Нет такого слова в текущем словаре");
-                    break;
-            }
+            //    default:
+            //        Console.WriteLine("Нет такого слова в текущем словаре");
+            //        break;
+            //}
 
             //Задание 4
             //Напишите программу, которая будет выполнять проверку чисел на четность.
             //Предложите два варианта решения поставленной задачи.
 
+            Console.WriteLine("Введите целое число");
+            int number = int.Parse(Console.ReadLine());
+            if (number%2 == 0) { Console.WriteLine("Четное число"); }
+            else { Console.WriteLine("Нечетное число"); }
+
+            Console.WriteLine("Введите целое число");
+            int number2 = int.Parse(Console.ReadLine());
+            if (number % 2 != 0) { Console.WriteLine("Нечетное число"); }
+            else { Console.WriteLine("четное число"); }
 
             Console.ReadLine();
         }
